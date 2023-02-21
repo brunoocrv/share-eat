@@ -1,17 +1,14 @@
-import { Button } from "@/components/Button";
-import { Header } from "@/components/Header";
-import { Container, Form } from "@/styles/pages/restaurant/newDish";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
 
-interface INewDish {
-  name: string;
-  price: number;
-	description: string;
-};
+import { Container, Form } from "@/styles/pages/restaurant/newDish";
+
+import { Button } from "@/components/Button";
+import { Header } from "@/components/Header";
+import { INewDish } from "@/types/newDish";
 
 export default function NewDish() {
-	const { register, handleSubmit, formState: { errors } } = useForm<INewDish>();
+	const { register, handleSubmit } = useForm<INewDish>();
 	const router = useRouter();
 
 	const { restaurant } = router.query;

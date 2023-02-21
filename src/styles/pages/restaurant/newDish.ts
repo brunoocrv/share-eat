@@ -3,7 +3,6 @@ import { styled } from "@/styles";
 export const Container = styled('div', {
 	padding: '0 2rem',
 
-
 	'h1': {
 		color: '$orange',
 		marginBottom: '2rem'
@@ -13,7 +12,18 @@ export const Container = styled('div', {
 export const Form = styled('form', {
 	display: 'flex',
 	flexDirection: 'column',
-	width: '30rem',
+
+	'@sm': {
+		width: '100%',
+	},
+
+	'@md': {
+		width: '30rem',
+	},
+
+	'@lg': {
+		width: '30rem',
+	},
 
 	'label, span': {
 		fontSize: '0.87rem'

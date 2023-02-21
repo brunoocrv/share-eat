@@ -1,13 +1,11 @@
 import { Card, Container, IconContainer } from '@/styles/components/placecard'
+import { IPlaceCard } from '@/types/placeCard';
 import Link from 'next/link';
 import { FaPlus } from 'react-icons/fa'
 
 import { Button } from '../Button';
 
-interface IPlaceCard {
-	restaurantName: string;
-	dishes: number;
-}
+
 
 export function PlaceCard({ restaurantName, dishes }: IPlaceCard) {
 	return (

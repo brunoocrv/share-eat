@@ -1,13 +1,12 @@
 import { LogoContainer } from "@/styles/components/header"
 
-import logo from '@/assets/images/logo.svg'
 import { FaArrowLeft } from "react-icons/fa"
 import Image from "next/image"
 import Link from "next/link"
 
-interface IHeader {
-	isRoot?: boolean
-}
+import logo from '@/assets/images/logo.svg'
+
+import { IHeader } from "@/types/header"
 
 export function Header({ isRoot = false }: IHeader) {
 	return (
